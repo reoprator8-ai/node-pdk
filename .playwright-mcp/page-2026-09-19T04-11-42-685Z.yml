@@ -1,0 +1,56 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - navigation [ref=f2e3]:
+      - link "PDK Logo" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - img "PDK Logo"
+      - generic [ref=f2e5]:
+        - generic [ref=f2e6]:
+          - textbox "Search..." [ref=f2e12]
+          - generic:
+            - generic: Ctrl +
+            - generic: K
+        - button "Toggle theme" [ref=f2e13] [cursor=pointer]
+        - button "Help" [ref=f2e21] [cursor=pointer]
+        - button "Menu" [ref=f2e26] [cursor=pointer]
+    - generic [ref=f2e162]:
+      - navigation "breadcrumb" [ref=f2e164]:
+        - list [ref=f2e165]:
+          - listitem [ref=f2e166]:
+            - link "Home" [ref=f2e167] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f2e170]:
+            - generic [ref=f2e171]: Ocean Lakes 17072 (Ocean Lakes 17072)
+      - generic [ref=f2e173]:
+        - heading "Ocean Lakes 17072 (Ocean Lakes 17072)" [level=1] [ref=f2e174]
+        - link "System Health Good" [ref=f2e175] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/states/health
+          - generic [ref=f2e176]: System Health
+          - generic [ref=f2e177]: Good
+      - generic [ref=f2e184]:
+        - link "People" [ref=f2e185] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/people
+        - link "Groups" [ref=f2e190] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/groups
+        - link "System Events" [ref=f2e196] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/events
+        - link "Auto Open" [ref=f2e200] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/auto-open
+        - link "Reports" [ref=f2e205] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/reports
+        - link "Partitions" [ref=f2e210] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/partitions
+        - link "States" [ref=f2e217] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/states
+        - link "Live Events" [ref=f2e222] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/live-events
+        - link "Permissions" [ref=f2e231] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/permissions
+        - link "Integrations" [ref=f2e236] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/integrations
+        - link "System Settings" [ref=f2e245] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/settings
+        - link "Configuration" [ref=f2e248] [cursor=pointer]:
+          - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/configuration
+  - region "Notifications alt+T"
+  - alert [ref=f2e161]: Ocean Lakes 17072 (Ocean Lakes 17072)

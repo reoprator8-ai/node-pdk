@@ -17,6 +17,7 @@ export async function makePanelSession(authSession, {id, uri}) {
   );
   // Cache the id_token so the non-async reconnect_attempt handler can get to it
   let id_token = (await token()).id_token;
+  const streams = new Set();
 
   session.createEventStream = function() {
     // Add the auth token to the socket.io connection URL querystring
@@ -50,8 +51,14 @@ export async function makePanelSession(authSession, {id, uri}) {
     };
     socket.once('invalidToken', invalidHandler);
 
+    streams.add(socket);
+    socket.once('disconnect', () => streams.delete(socket));
     return socket;
   }
+  session.closeEventStreams = () => {
+    for (const socket of streams) socket.close();
+    streams.clear();
+  };
 
   return session;
 }

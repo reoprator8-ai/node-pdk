@@ -3,6 +3,10 @@
   "version": "0.8.0",
   "description": "ProdataKey pdk.io API Client Library for Javascript",
   "scripts": {
+    "start": "node src/mcp/index.js",
+    "mcp": "node src/mcp/index.js",
+    "setup": "node scripts/setup-pdk.js",
+    "triage": "node scripts/pdk-triage.js",
     "test": "mocha -r src/test/setup.js --loader=esmock \"src/**/*.spec.js\"",
     "watch": "mocha -wr src/test/setup.js \"src/**/*.spec.js\" --inspect",
     "lint": "eslint ."
@@ -11,7 +15,21 @@
   "license": "MIT",
   "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "pdk-mcp": "src/mcp/index.js",
+    "pdk-setup": "scripts/setup-pdk.js",
+    "pdk-triage": "scripts/pdk-triage.js"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "docs",
+    "claude-desktop.json.example",
+    ".env.example",
+    "readme.md"
+  ],
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "asyncp": "^0.8.0",
     "debug": "^4.3.4",
     "got": "^13.0.0",

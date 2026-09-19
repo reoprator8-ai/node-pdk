@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pdk-readonly": {
+      "command": "pdk-mcp",
+      "cwd": "C:\\Users\\YOUR-NAME\\.pdk"
+    }
+  }
+}

@@ -2,5 +2,6 @@ run.sh
 testrun.sh
 inventory.json
 node_modules/
+.env
 .idea
 .idea/*

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "project-knowledge-graph-reference.v1",
+  "generatedAt": "2026-09-19T07:48:11.087Z",
+  "project": {
+    "name": "playwright-mcp"
+  },
+  "canonical": {
+    "graph": "workspace:.workspai/reports/workspace-knowledge-graph.json",
+    "boundedQuery": "workspai workspace graph search <task-query> --scope project:playwright-mcp --limit 12 --json",
+    "sourceHash": "c2d735b800373ec6d8cbc8ce4dce9e159e87c70ab228bf32d7c872a6d657eef6",
+    "projectionHash": "96f00aef61669da71daaa3aaa3510f6e8d0fa699b4a143c6f12c2fe2329284a1"
+  },
+  "summary": {
+    "entityCount": 2,
+    "relationCount": 1,
+    "proofCount": 3
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "payloadHash": "bc530cb28e38fd0416b61ca8ac7bd684c790ed6862bb7bdaf56ae6a544ab470f",
+    "portable": true,
+    "absolutePathsEmitted": false
+  }
+}

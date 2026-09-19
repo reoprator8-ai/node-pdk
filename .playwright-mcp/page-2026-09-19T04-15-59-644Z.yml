@@ -1,0 +1,174 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - navigation [ref=f10e3]:
+      - link "PDK Logo" [ref=f10e4] [cursor=pointer]:
+        - /url: /
+        - img "PDK Logo"
+      - generic [ref=f10e5]:
+        - generic [ref=f10e6]:
+          - textbox "Search..." [ref=f10e12]
+          - generic:
+            - generic: Ctrl +
+            - generic: K
+        - button "Toggle theme" [ref=f10e13] [cursor=pointer]
+        - button "Help" [ref=f10e21] [cursor=pointer]
+        - button "Menu" [ref=f10e26] [cursor=pointer]
+    - generic [ref=f10e93]:
+      - navigation "breadcrumb" [ref=f10e95]:
+        - list [ref=f10e96]:
+          - listitem [ref=f10e97]:
+            - link "Home" [ref=f10e98] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f10e101]:
+            - link "Ocean Lakes 17072 (Ocean Lakes 17072)" [ref=f10e102] [cursor=pointer]:
+              - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00
+          - listitem [ref=f10e105]:
+            - link "Configuration" [ref=f10e106] [cursor=pointer]:
+              - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/configuration
+          - listitem [ref=f10e109]:
+            - generic [ref=f10e110]: Ocean Lakes 17072
+      - heading "Cloud Node Configuration" [level=1] [ref=f10e113]
+      - tablist [ref=f10e115]:
+        - tab "General" [selected] [ref=f10e116] [cursor=pointer]
+        - tab "Devices" [ref=f10e117] [cursor=pointer]
+        - tab "Connections" [ref=f10e118] [cursor=pointer]
+        - tab "Discovery" [ref=f10e119] [cursor=pointer]
+        - tab "Diagnostics" [ref=f10e120] [cursor=pointer]
+      - generic [ref=f10e121]:
+        - generic [ref=f10e122]:
+          - generic [ref=f10e123]: General Settings
+          - generic [ref=f10e124]: Configure key details for your Cloud Node, including identification, time settings, and access card formats.
+        - generic [ref=f10e125]:
+          - generic [ref=f10e126]:
+            - heading "Details" [level=1] [ref=f10e127]
+            - heading "Edit the name and description for your Cloud Node." [level=4] [ref=f10e128]
+          - generic [ref=f10e131]:
+            - generic [ref=f10e132]:
+              - generic [ref=f10e133]:
+                - generic [ref=f10e134]:
+                  - generic [ref=f10e135]: Serial Number
+                  - generic [ref=f10e136]:
+                    - textbox "Serial Number" [ref=f10e138]: 10750QE
+                    - button "Copy Serial Number" [ref=f10e139] [cursor=pointer]
+                - generic [ref=f10e143]:
+                  - generic [ref=f10e144]: Cloud Node ID
+                  - generic [ref=f10e145]:
+                    - textbox "Cloud Node ID" [ref=f10e147]: c6581d65-a31b-4056-bffe-7486713f41cb
+                    - button "Copy Cloud Node ID" [ref=f10e148] [cursor=pointer]
+              - generic [ref=f10e152]:
+                - generic [ref=f10e153]: Name
+                - textbox "Name" [ref=f10e155]: Ocean Lakes 17072
+              - generic [ref=f10e156]:
+                - generic [ref=f10e157]: Description
+                - generic [ref=f10e158]:
+                  - textbox "Description" [ref=f10e159]
+                  - paragraph [ref=f10e160]: 0 / 255
+            - generic [ref=f10e161]:
+              - link "Learn more about Cloud Node details" [ref=f10e162] [cursor=pointer]:
+                - /url: https://support.pdk.io/hc/en-us/articles/18679577281047
+              - button "Save Changes" [disabled]
+        - generic [ref=f10e167]:
+          - generic [ref=f10e168]:
+            - heading "Location" [level=1] [ref=f10e169]
+            - heading "Edit and manage the Cloud Node details, including street address, city, state, and postal code, to ensure accurate location information for configuration, reporting, and location-based features." [level=4] [ref=f10e170]
+          - generic [ref=f10e173]:
+            - generic [ref=f10e175]:
+              - generic [ref=f10e176]:
+                - generic [ref=f10e177]:
+                  - text: Street Address
+                  - generic [aria-hidden] [ref=f10e178]: "*"
+                - textbox "Street Address" [ref=f10e181]:
+                  - /placeholder: Start Typing Address
+              - generic [ref=f10e182]:
+                - generic [ref=f10e183]: Apartment/Suite/Building
+                - textbox "Apartment/Suite/Building" [ref=f10e185]
+              - generic [ref=f10e186]:
+                - generic [ref=f10e187]:
+                  - generic [ref=f10e188]:
+                    - text: City
+                    - generic [aria-hidden] [ref=f10e189]: "*"
+                  - textbox "City" [ref=f10e191]
+                - generic [ref=f10e192]:
+                  - generic [ref=f10e193]:
+                    - text: State/Province/Region
+                    - generic [aria-hidden] [ref=f10e194]: "*"
+                  - combobox "State/Province/Region" [ref=f10e195] [cursor=pointer]
+                  - combobox [aria-hidden] [ref=f10e198] [cursor=pointer]
+              - generic [ref=f10e199]:
+                - generic [ref=f10e200]:
+                  - generic [ref=f10e201]:
+                    - text: Zip/Postal Code
+                    - generic [aria-hidden] [ref=f10e202]: "*"
+                  - textbox "Zip/Postal Code" [ref=f10e204]
+                - generic [ref=f10e205]:
+                  - generic [ref=f10e206]:
+                    - text: Country
+                    - generic [aria-hidden] [ref=f10e207]: "*"
+                  - combobox "Country" [ref=f10e208] [cursor=pointer]:
+                    - generic: United States
+                  - combobox [aria-hidden] [ref=f10e211] [cursor=pointer]
+              - button "Use Current Location as Address" [ref=f10e213] [cursor=pointer]
+            - generic [ref=f10e217]:
+              - button "Save Changes" [disabled]
+        - generic [ref=f10e218]:
+          - generic [ref=f10e219]:
+            - heading "Time Settings" [level=1] [ref=f10e220]
+            - heading "The time zone will be used for all schedules, rules, and event reporting on this Cloud Node." [level=4] [ref=f10e221]
+          - generic [ref=f10e224]:
+            - generic [ref=f10e226]:
+              - generic [ref=f10e227]:
+                - generic [ref=f10e228]: Region
+                - combobox [ref=f10e229] [cursor=pointer]:
+                  - generic: US
+                - combobox [aria-hidden] [ref=f10e232] [cursor=pointer]
+              - generic [ref=f10e233]:
+                - generic [ref=f10e234]: Time Zone
+                - combobox "Time Zone" [ref=f10e235] [cursor=pointer]:
+                  - generic: (UTC-04:00) Eastern
+                - combobox [aria-hidden] [ref=f10e238] [cursor=pointer]
+            - generic [ref=f10e239]:
+              - link "Learn more about time settings" [ref=f10e240] [cursor=pointer]:
+                - /url: https://support.pdk.io/hc/en-us/articles/360047588554
+              - button "Save Changes" [disabled]
+        - generic [ref=f10e245]:
+          - generic [ref=f10e246]:
+            - heading "Card Formats" [level=1] [ref=f10e247]
+            - heading "Choose which of the available card formats can be used by this Cloud Node as physical credentials." [level=4] [ref=f10e248]
+          - generic [ref=f10e250]:
+            - generic [ref=f10e251]:
+              - button "PDK Standard Facility Code Standard 26-bit Format Do Not Enforce 9 - 64 bits" [ref=f10e254] [cursor=pointer]:
+                - img "PDK Standard Facility Code" [ref=f10e256]
+                - generic [ref=f10e259]:
+                  - generic [ref=f10e260]: Standard 26-bit Format
+                  - generic [ref=f10e261]: Do Not Enforce
+                - generic [ref=f10e262]: 9 - 64 bits
+              - button "Activate Card Format" [ref=f10e264] [cursor=pointer]
+            - link "Learn more about Card Formats" [ref=f10e268] [cursor=pointer]:
+              - /url: https://support.pdk.io/hc/en-us/articles/9626686567447
+        - generic [ref=f10e273]:
+          - generic [ref=f10e274]:
+            - heading "Emergency Cards" [level=1] [ref=f10e275]
+            - heading "Emergency Cards allow users to gain access to readers incase of emergency." [level=4] [ref=f10e276]
+          - generic [ref=f10e278]:
+            - generic [ref=f10e279]:
+              - generic [ref=f10e280]: No active emergency cards
+              - button "Add Emergency Card" [ref=f10e286] [cursor=pointer]
+            - link "Learn more about emergency cards" [ref=f10e291] [cursor=pointer]:
+              - /url: https://support.pdk.io/hc/en-us/articles/12759988494359
+        - generic [ref=f10e296]:
+          - generic [ref=f10e297]:
+            - heading "Advanced" [level=1] [ref=f10e298]
+            - heading "Manage advanced settings for cloud node replacement and removal." [level=4] [ref=f10e299]
+          - generic [ref=f10e301]:
+            - generic [ref=f10e302]:
+              - generic [ref=f10e303]:
+                - heading "Replace Cloud Node" [level=3] [ref=f10e304]
+                - paragraph [ref=f10e305]: Transfers all settings and connected devices to a new or RMA'ed Cloud Node.
+              - button "Replace" [ref=f10e306] [cursor=pointer]
+            - generic [ref=f10e311]:
+              - generic [ref=f10e312]:
+                - heading "Delete Cloud Node" [level=3] [ref=f10e313]
+                - paragraph [ref=f10e314]: Deletes the Cloud Node and all settings, configured devices, and connections.
+              - button "Delete" [ref=f10e315] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=f10e92]: "Configure Cloud Node: Ocean Lakes 17072 (Ocean Lakes 17072)"

@@ -1,0 +1,16 @@
+- generic [active] [ref=f3e1]:
+  - navigation [ref=f3e3]:
+    - link "PDK Logo" [ref=f3e4] [cursor=pointer]:
+      - /url: /
+      - img "PDK Logo"
+    - generic [ref=f3e5]:
+      - generic [ref=f3e6]:
+        - textbox "Search..." [ref=f3e12]
+        - generic:
+          - generic: Ctrl +
+          - generic: K
+      - button "Toggle theme" [ref=f3e13] [cursor=pointer]
+      - button "Help" [ref=f3e21] [cursor=pointer]
+      - button "Menu" [ref=f3e26] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=f3e34]

@@ -1,0 +1,30 @@
+[     270ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[     270ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'battery'. @ :0
+[     270ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'. @ :0
+[     270ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'execution-while-not-rendered'. @ :0
+[     270ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'execution-while-out-of-viewport'. @ :0
+[     270ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'navigation-override'. @ :0
+[     350ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://accounts.pdk.io/login:0
+[     439ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://accounts.pdk.io/profile:0
+[     519ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://accounts.pdk.io/auth/local:0
+[     526ms] [WARNING] pascalprecht.translate.$translateSanitization: No sanitization strategy has been configured. This can have serious security implications. See http://angular-translate.github.io/docs/#/guide/19_security for details. @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[     530ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[     531ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[     532ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[     532ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[     629ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.pdk.io/login:0
+[     629ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://accounts.pdk.io/login:0
+[    6819ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[    6820ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[    6820ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[    6820ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[    6821ms] [ERROR] Transition Rejection($id: 0 type: 2, message: The transition has been superseded by a different transition, detail: "null") @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:21
+[    6821ms] [ERROR] Possibly unhandled rejection: {"$id":0,"type":2,"message":"The transition has been superseded by a different transition","detail":null} @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[    6833ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ https://accounts.pdk.io/login/totp:0
+[  600382ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[  600383ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[  600383ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[  600384ms] [WARNING] ARIA: Attribute " aria-label ", required for accessibility, is missing on node: JSHandle@node @ https://accounts.pdk.io/main.88d9382682c88b1c5f93.bundle.js:13
+[  600479ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.pdk.io/login:0
+[  600479ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://accounts.pdk.io/login:0
+[  611654ms] [LOG] PolicyCheckerNoop -> setPolicyLookupCookie @ https://pdk.io/_next/static/chunks/0aq~h3g6aq-dx.js:2

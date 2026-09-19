@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PDK Read-only MCP Team Handoff</title>
+  <style>
+    @page { size: Letter; margin: 0.65in; }
+    body { font-family: Arial, sans-serif; color: #17202a; line-height: 1.45; font-size: 10.5pt; }
+    h1 { color: #123b5d; font-size: 24pt; margin-bottom: 4pt; }
+    h2 { color: #123b5d; border-bottom: 1px solid #b8c7d1; padding-bottom: 3pt; margin-top: 20pt; }
+    h3 { color: #245b7d; margin-bottom: 4pt; }
+    code, pre { font-family: Consolas, monospace; }
+    pre { background: #f1f4f6; border: 1px solid #d8e0e5; border-radius: 4px; padding: 9pt; white-space: pre-wrap; }
+    .subtitle { color: #52636f; font-size: 13pt; }
+    .notice { background: #fff4d6; border-left: 4px solid #d99b00; padding: 8pt 10pt; }
+    .safe { background: #eaf6ed; border-left: 4px solid #2d8a49; padding: 8pt 10pt; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #c8d2d9; padding: 6pt; text-align: left; vertical-align: top; }
+    th { background: #e8eef2; }
+    .footer { color: #657681; font-size: 8.5pt; margin-top: 24pt; }
+  </style>
+</head>
+<body>
+  <h1>PDK Read-only MCP Package</h1>
+  <div class="subtitle">Developer handoff and installation guide</div>
+
+  <div class="safe"><strong>Purpose:</strong> Connect Claude to PDK through a local MCP server for authenticated, read-only searches and event queries. No credentials are placed in chat, source control, the Claude JSON file, or the package archive.</div>
+
+  <h2>What is included</h2>
+  <table>
+    <tr><th>Artifact</th><th>Purpose</th></tr>
+    <tr><td><code>pdk-client-0.8.0.tgz</code></td><td>Installable npm package containing the MCP server and commands.</td></tr>
+    <tr><td><code>claude-desktop.json.example</code></td><td>Claude Desktop MCP connection template.</td></tr>
+    <tr><td><code>docs/team-package.md</code></td><td>Full text installation and distribution instructions.</td></tr>
+  </table>
+
+  <h2>Install for a developer</h2>
+  <p>From the folder containing the tarball:</p>
+  <pre>npm install --global .\pdk-client-0.8.0.tgz
+New-Item -ItemType Directory -Force "$HOME\.pdk" | Out-Null
+Set-Location "$HOME\.pdk"
+pdk-setup</pre>
+  <p><code>pdk-setup</code> prompts locally for the PDK OAuth client ID and client secret, then writes an ignored <code>.env</code> file in the current folder. Each developer should use an approved, rotated credential.</p>
+
+  <h2>Connect Claude Desktop</h2>
+  <p>Copy the JSON template into Claude Desktop's MCP configuration, replace <code>YOUR-NAME</code>, and restart Claude Desktop:</p>
+  <pre>{
+  "mcpServers": {
+    "pdk-readonly": {
+      "command": "pdk-mcp",
+      "cwd": "C:\\Users\\YOUR-NAME\\.pdk"
+    }
+  }
+}</pre>
+  <p>The <code>cwd</code> points to the folder containing the local <code>.env</code>. The JSON contains no secret.</p>
+
+  <h2>Read-only tools</h2>
+  <ul>
+    <li><code>getPanel</code> — fetch panel details.</li>
+    <li><code>listEntities</code> — search people, doors, sites, groups, and credentials with pagination.</li>
+    <li><code>getEntity</code> — fetch one entity.</li>
+    <li><code>getGroupMembers</code> — read group membership.</li>
+    <li><code>listPersonCards</code> — read cards assigned to a person.</li>
+    <li><code>getEventStream</code> — collect bounded live events.</li>
+  </ul>
+  <p><strong>Not available:</strong> creating or deleting people, adding cards, assigning groups, sending commands, unlocking doors, or changing configuration.</p>
+
+  <h2>Direct sanitized triage lookup</h2>
+  <pre>pdk-triage --panel 1072FW4 --entity persons --search "Groups Issue" --output report.json</pre>
+  <p>The report records duration, query, pagination, and results. Sensitive fields such as tokens, secrets, authorization values, credentials, and card numbers are replaced with <code>[REDACTED]</code>.</p>
+
+  <h2>Operational notes</h2>
+  <ul>
+    <li>Node.js 18 or newer is required.</li>
+    <li>Authentication is still required, but it is entered locally once per workstation.</li>
+    <li>Do not send secrets through chat or commit <code>.env</code>.</li>
+    <li>For changes, update the source repository, run lint, then rebuild with <code>npm pack</code>.</li>
+  </ul>
+  <div class="footer">PDK read-only MCP team handoff | Generated for internal developer distribution</div>
+</body>
+</html>

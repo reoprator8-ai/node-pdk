@@ -1,0 +1,45 @@
+- generic [ref=f11e1]:
+  - generic [ref=f11e3]:
+    - generic [ref=f11e5]:
+      - img "MongoDB Logo" [ref=f11e7]
+      - heading "Log in to your account" [level=2] [ref=f11e17]
+      - generic [ref=f11e18]:
+        - text: Don't have an account?
+        - link "Sign Up" [ref=f11e19] [cursor=pointer]:
+          - /url: /account/register?signedOut=true&n=https%3A%2F%2Fcloud.mongodb.com%2F
+      - alert [ref=f11e20]:
+        - img "Checkmark With Circle Icon" [ref=f11e21]
+        - strong [ref=f11e24]: You have successfully logged out.
+      - button "Google's Logo Google" [ref=f11e25] [cursor=pointer]:
+        - generic [ref=f11e28]:
+          - img "Google's Logo" [ref=f11e29]
+          - generic [ref=f11e38]: Google
+      - button "GitHub's Logo GitHub" [ref=f11e39] [cursor=pointer]:
+        - generic [ref=f11e42]:
+          - img "GitHub's Logo" [ref=f11e43]
+          - generic [ref=f11e46]: GitHub
+      - generic [ref=f11e47]:
+        - generic [ref=f11e48]:
+          - strong [ref=f11e49]: "Note:"
+          - text: GitHub requires a public verified email address.
+        - generic [ref=f11e50]: Update GitHub privacy settings before continuing.
+      - generic [ref=f11e51]: Or with email and password
+      - group [ref=f11e53]:
+        - generic [ref=f11e54]:
+          - text: Email Address
+          - textbox "Email Address" [active] [ref=f11e57]:
+            - /placeholder: ""
+      - contentinfo [ref=f11e58]:
+        - button "Next" [disabled] [ref=f11e59]
+    - generic [ref=f11e63]:
+      - generic [ref=f11e64]: Explore upcoming MongoDB.local events
+      - generic [ref=f11e65]: Connect with MongoDB experts, AI innovators, and tech leaders and get the skills you need to build great application experiences for a new generation of users.
+      - generic [ref=f11e66]: Use ATLAS50 for 50% off.
+      - link "Browse events →" [ref=f11e67] [cursor=pointer]:
+        - /url: https://www.mongodb.com/events/mongodb-local
+        - generic [ref=f11e68]: Browse events
+        - generic [ref=f11e69]: →
+  - iframe [ref=f11e72]:
+    - generic [ref=f12e6]:
+      - text: protected by
+      - strong [ref=f12e7]: reCAPTCHA

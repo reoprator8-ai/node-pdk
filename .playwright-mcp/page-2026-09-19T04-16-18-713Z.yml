@@ -1,0 +1,107 @@
+- generic:
+  - generic [aria-hidden]:
+    - navigation:
+      - link:
+        - /url: /
+      - generic:
+        - generic:
+          - generic:
+            - textbox:
+              - /placeholder: Search...
+          - generic:
+            - generic: Ctrl +
+            - generic: K
+        - button:
+          - generic: Toggle theme
+        - button:
+          - generic: Help
+        - button:
+          - generic: Menu
+    - generic:
+      - generic:
+        - navigation:
+          - list:
+            - listitem:
+              - link:
+                - /url: /
+                - text: Home
+            - listitem:
+              - link:
+                - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00
+                - text: Ocean Lakes 17072 (Ocean Lakes 17072)
+            - listitem:
+              - link:
+                - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/configuration
+                - text: Configuration
+            - listitem:
+              - generic: Ocean Lakes 17072
+      - generic:
+        - generic:
+          - heading [level=1]: Cloud Node Configuration
+        - generic:
+          - button [expanded]:
+            - generic: Add Device
+      - generic:
+        - tablist:
+          - tab: General
+          - tab [selected]: Devices
+          - tab: Connections
+          - tab: Discovery
+          - tab: Diagnostics
+      - generic:
+        - generic:
+          - generic:
+            - generic: Search Devices
+            - generic:
+              - textbox:
+                - /placeholder: Search Devices
+          - generic:
+            - group:
+              - radio [checked]
+              - radio
+        - generic:
+          - link:
+            - /url: /systems/0e866cb1-88fa-44ce-85ba-ade65dbfff00/configuration/c6581d65-a31b-4056-bffe-7486713f41cb/devices/0e7cbabb-22e5-40d6-b50a-01d74c7a5436
+            - generic:
+              - generic:
+                - generic: Gate
+                - generic:
+                  - generic: Onboard Controller
+                  - generic: Primary Reader
+  - region "Notifications alt+T"
+  - alert: "Configure Cloud Node: Ocean Lakes 17072 (Ocean Lakes 17072)"
+  - dialog [ref=f10e362]:
+    - generic [ref=f10e363]:
+      - button [active] [ref=f10e364] [cursor=pointer]
+      - generic [ref=f10e367]:
+        - heading "Add Device" [level=2] [ref=f10e368]
+        - paragraph [ref=f10e370]: Add a new device to this system.
+    - generic [ref=f10e373]:
+      - generic [ref=f10e374]:
+        - heading [level=3] [ref=f10e379]:
+          - button "Toggle section" [expanded] [ref=f10e380] [cursor=pointer]: Device Category
+        - region "Toggle section" [ref=f10e383]:
+          - radiogroup [ref=f10e384]:
+            - radio "Primary Reader Door or Gate" [ref=f10e385] [cursor=pointer]:
+              - img "Primary Reader" [ref=f10e386]
+              - generic [ref=f10e390]: Door or Gate
+            - radio [aria-hidden]
+            - radio "Red Wireless Lock Red Wireless Lock" [ref=f10e391] [cursor=pointer]:
+              - img "Red Wireless Lock" [ref=f10e392]
+              - generic [ref=f10e397]: Red Wireless Lock
+            - radio [aria-hidden]
+            - radio "Generic IO IO Device" [ref=f10e398] [cursor=pointer]:
+              - img "Generic IO" [ref=f10e399]
+              - generic [ref=f10e402]: IO Device
+            - radio [aria-hidden]
+            - radio "Primary Elevator Reader Elevator" [ref=f10e403] [cursor=pointer]:
+              - img "Primary Elevator Reader" [ref=f10e404]
+              - generic [ref=f10e409]: Elevator
+            - radio [aria-hidden]
+      - heading [level=3] [ref=f10e415]:
+        - button "Toggle section" [disabled] [ref=f10e416] [cursor=pointer]: Device Type
+      - heading [level=3] [ref=f10e424]:
+        - button "Toggle section" [disabled] [ref=f10e425] [cursor=pointer]: Details
+    - generic [ref=f10e428]:
+      - button "Cancel" [ref=f10e429] [cursor=pointer]
+      - button "Save" [ref=f10e430] [cursor=pointer]
