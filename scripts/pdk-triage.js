@@ -3,6 +3,9 @@
 import { writeFile } from 'node:fs/promises';
 import { makePanelSession, makeSession } from '../src/index.js';
 import { createAuthStrategy } from '../src/mcp/auth.js';
+import { loadDotEnv } from '../src/mcp/config.js';
+
+loadDotEnv();
 
 const SENSITIVE_KEYS = /token|secret|password|authorization|cookie|card(number)?|credential/i;
 

@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { homedir } from 'node:os';
 
 loadDotEnv();
 
@@ -43,11 +44,16 @@ function parsePositiveInt(value, fallback) {
   return parsed;
 }
 
-function loadDotEnv(filePath = resolve(process.cwd(), '.env')) {
-  if (!existsSync(filePath)) return;
-  for (const line of readFileSync(filePath, 'utf8').split(/\r?\n/)) {
-    const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)\s*$/);
-    if (!match || process.env[match[1]]) continue;
-    process.env[match[1]] = match[2].replace(/^['"]|['"]$/g, '');
+export function loadDotEnv(filePaths = [
+  resolve(process.cwd(), '.env'),
+  resolve(homedir(), '.pdk', '.env'),
+]) {
+  for (const filePath of filePaths) {
+    if (!existsSync(filePath)) continue;
+    for (const line of readFileSync(filePath, 'utf8').split(/\r?\n/)) {
+      const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)\s*$/);
+      if (!match || process.env[match[1]]) continue;
+      process.env[match[1]] = match[2].replace(/^['"]|['"]$/g, '');
+    }
   }
 }
